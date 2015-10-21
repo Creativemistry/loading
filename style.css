@@ -1,0 +1,123 @@
+body{
+	background-color: #333;
+}
+/*-- Diagrams --*/
+.skills_list {
+	padding:0!important;
+	list-style:none!important;
+	margin:0!important;
+}
+.skills_list li {
+	border:0;
+	border-radius:0;
+	box-shadow:none;
+	height:50px;
+	display:block;
+	position:relative;
+	margin:0 0 10px 0!important;
+	overflow:hidden;
+	padding:0!important;	
+}
+		
+.skills_list li .diagram_bar {
+	padding:0;
+	display:block;
+	position:relative;
+}
+.skills_list li .diagram_bar h6 {
+	margin:0;
+	padding:8px 13px;
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-style:normal;
+	line-height:20px;
+	position:absolute;
+	left:7px;
+	top:7px;
+	z-index:50;
+	color:#fff;
+	background:#23222a;
+	border-radius:5px;
+	-webkit-border-radius:5px;	
+}
+.skills_list li .diagram_bar h6.skill_percent {
+	padding:8px 0;
+	width:51px;
+	text-align:center;
+	left:auto;
+	right:0;
+	margin-right:7px;
+	display:none;
+}
+.skill_div-wrapper {
+	position:relative;
+	overflow:hidden;
+	height:50px;
+	display:block;
+	background:none;
+	border-radius:0;
+	box-shadow:none;		
+}
+
+@-webkit-keyframes progress-bar-stripes-diagr {
+  from {
+    background-position: 64px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes-diagr {
+  from {
+    background-position: 64px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes-diagr {
+  from {
+    background-position: 64px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes-diagr {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 64px 0;
+  }
+}
+
+@keyframes progress-bar-stripes-diagr {
+  from {
+    background-position: 64px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.skills_list li .skill_div {
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:50px;
+	display:block;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	box-shadow:none;
+	background-color: #43b9b8;
+	background-image: url(progress-bar.png);
+	-webkit-animation: progress-bar-stripes-diagr 2s linear infinite reverse;
+     -moz-animation: progress-bar-stripes-diagr 2s linear infinite reverse;
+      -ms-animation: progress-bar-stripes-diagr 2s linear infinite reverse;
+       -o-animation: progress-bar-stripes-diagr 2s linear infinite reverse;
+          animation: progress-bar-stripes-diagr 2s linear infinite reverse;
+}
